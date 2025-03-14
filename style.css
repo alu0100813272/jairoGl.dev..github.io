@@ -1,0 +1,157 @@
+body {
+    text-align: justify;
+    font-family: Verdana;
+    line-height: 1.5;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-size: 10px;
+    padding: 0;
+}
+
+
+h1 {
+    font-size: 18px;
+    text-align: center;
+    margin: 0px;
+}
+
+h2 {
+    font-size: 16px;
+    color: #003366;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+h3{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+hr {
+    border: solid  #003366;
+}
+
+
+img {
+    border-radius: 25px;
+    width: 95px;
+    height: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.img-centrar {
+    flex: 0.25;
+    /* Espacio que ocupa el contenedor de la imagen */
+    display: flex;
+    /* Usamos flexbox para centrar el contenido */
+    justify-content: center;
+    /* Centra el contenido horizontalmente */
+    align-items: center;
+    /* Centra el contenido verticalmente */
+    height: 100%;
+    /* Asegura que ocupe toda la altura disponible */
+}
+
+
+/* Flexbox para organizar las secciones en columnas */
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main {
+    flex: 0.4;
+}
+
+
+.vertical {
+    border-right: solid #003366;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+.side {
+    flex: 1;
+}
+
+
+.certificados,
+.competencias,
+.idiomas,
+.educacion,
+.cursos {
+    border-top: 2px solid #003366;
+}
+
+.competencias li{
+    margin-bottom: 0px;
+}
+
+ul {
+    padding-left: 15px;
+    margin-top:0px;
+    margin-bottom: 5px;
+}
+
+.list-certificado {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+.list-certificado li {
+    display: inline;
+}
+
+.list-certificado li::before {
+    content: " | ";
+}
+
+.list-certificado li:first-child::before {
+    content: ""; /* Elimina la barra en el primer hijo */
+}
+ .list-exp{
+    margin:0px;
+ }
+
+
+.list-section {
+    display: flex;
+}
+
+
+
+.fechaExp {
+    min-width: 125px;
+    color: #666;
+}
+
+.fecha {
+    min-width: 65px;
+    color: #666;
+}
+
+.descripcion {
+    flex-grow: 1;
+    /* Toma el resto del espacio */
+    align-self: center;
+    /* Centrar verticalmente */
+}
+
+
+
+.perfil {
+    list-style: none;
+    padding-left: 15%;
+    text-align: left;
+}
+
+ul.circulo li{
+    list-style-type: disc; /* Define el marcador como disco */
+}
+/* Cambia solo el tamaño del disco */
+ul li::marker {
+    font-size: 1.1em; /* Ajusta el tamaño del disco */
+    color: black; /* Cambia el color del disco si lo deseas */
+  }
